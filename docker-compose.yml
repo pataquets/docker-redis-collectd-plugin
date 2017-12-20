@@ -1,0 +1,8 @@
+collectd:
+  build: .
+  links:
+    - redis
+
+redis:
+  image: redis
+  command: --loglevel verbose
